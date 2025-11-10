@@ -1,0 +1,92 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 03</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            background-color: #d298ed;
+        }
+        caption {
+            background-color: #1c7db5;
+            color: red;
+            font-weight: bold;
+            padding: 8px;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid red;
+        }
+        input[type="submit"] {
+            background-color: #00ff90; 
+            color: white;
+            padding: 8px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit">
+        <table>
+            <caption>Continental Hotel Reservation Form</caption>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>eMail</td>
+                <td><input type="email" placeholder="info@continental.pk"></td>
+            </tr>
+            <tr>
+                <td>Mobile No</td>
+                <td><input type="text" placeholder="Enter your cell number"></td>
+            </tr>
+            <tr>
+                <td>Arrival Time</td>
+                <td><input type="text" placeholder="Enter your arrival time"></td>
+            </tr>
+            <tr>
+                <td>Departure</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Room Type</td>
+                <td>
+                    <input type="radio" name="room" value="Single"> Single
+                    <input type="radio" name="room" value="Double"> Double
+                    <input type="radio" name="room" value="Presidential Suite"> Presidential Suite
+                </td>
+            </tr>
+            <tr>
+                <td>Preferences</td>
+                <td>
+                    <input type="checkbox" name="pref" value="Non-Smoking"> Non-Smoking<br>
+                    <input type="checkbox" name="pref" value="Internet"> Internet<br>
+                    <input type="checkbox" name="pref" value="Firm Mattress"> Firm Mattress
+                </td>
+            </tr>
+            <tr>
+                <td>Mode of Payment</td>
+                <td>
+                    <input type="radio" name="payment" value="Cash"> Cash
+                    <input type="radio" name="payment" value="Check"> Check
+                    <input type="radio" name="payment" value="Credit Card"> Credit Card
+                    <select name="card_type">
+                        <option>Select Card</option>
+                        <option>Visa</option>
+                        <option>MasterCard</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Send Data">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
